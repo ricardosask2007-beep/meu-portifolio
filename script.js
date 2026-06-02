@@ -5,3 +5,17 @@ cards.forEach(card => {
         card.classList.toggle('ativo')
     })
 })
+
+const botoes = document.querySelectorAll('.btn-projeto')
+
+botoes.forEach(botao => {
+
+    botao.addEventListener('click', () => {
+
+        const info = botao.nextElementSibling
+
+        info.classList.toggle('ativo')
+
+    })
+
+})
