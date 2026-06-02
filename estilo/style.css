@@ -183,11 +183,6 @@ section#cria {
     margin-top: 15px;
 }
 
-.info-projeto P {
-
-}
-
-
 .info-projeto.ativo{
     display: block;
     background-color: var(--hedfoot);
