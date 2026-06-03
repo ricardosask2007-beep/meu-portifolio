@@ -195,7 +195,11 @@ section#cria {
     margin-left: 15px;
 }
 
-
+#perfil,
+#comp,
+#cria{
+    scroll-margin-top: 55px;
+}
 
 
 
@@ -213,7 +217,14 @@ footer {
     text-align: center;
 }
 
-footer a{
+footer a {
     color: var(--fundo);
+    padding: 0px 5px;
+    font-size: 1.3rem;
 }
 
+@media  screen and (min-width: 768px) {
+    main {
+        grid-template-columns: auto 300px 1fr auto;
+    }
+}
