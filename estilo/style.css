@@ -225,6 +225,21 @@ footer a {
 
 @media  screen and (min-width: 768px) {
     main {
-        grid-template-columns: auto 300px 1fr auto;
+        grid-template-columns: auto 400px 1fr auto;
+    }
+
+    #perfil {
+        grid-column: 2 / 3;
+        height: fit-content;
+        position: sticky;
+        top: 65px;
+    }
+
+    #comp {
+        grid-column: 3/4;
+    }
+    
+    section#cria {
+        grid-column: 3/4;
     }
 }
