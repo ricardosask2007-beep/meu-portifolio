@@ -175,7 +175,13 @@ section#cria {
 
 .btn-projeto{
     margin-top: 10px;
+    background-color: #10b89a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .info-projeto{
@@ -217,10 +223,25 @@ footer {
     text-align: center;
 }
 
+footer p {
+    margin-bottom: 15px;
+}
+
 footer a {
     color: var(--fundo);
     padding: 0px 5px;
     font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+footer a.orc {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 @media  screen and (min-width: 768px) {
