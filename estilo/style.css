@@ -85,7 +85,7 @@ main {
     content: "";
     width: 80px;
     height: 4px;
-    background-color: #00b894;
+    background-color: var(--hedfoot);
 
     display: block;
     margin: 8px auto;
@@ -108,15 +108,15 @@ main {
 
 .cards-comp h3.tt{
     color:#222;
-    border-left: 5px solid #00b894;
+    border-left: 5px solid var(--hedfoot);
     padding-left: 10px;
     margin: 20px 0;
 }
 
 .card{
-    background-color: #f8f8f8;
+    background-color: var(--fundo);
     color: var(--hedfoot);
-    border-left: 4px solid #00b894;
+    border-left: 4px solid var(--hedfoot);
     padding: 9px;
     border-radius: 15px;
     transition: 0.3s;
@@ -129,7 +129,7 @@ main {
 
 .ativo {
     transform: translate(-5px) scale(1.02);
-    background-color: #00b894;
+    background-color: var(--hedfoot);
     color: var(--fundo);
     box-shadow: none;
     
@@ -148,7 +148,7 @@ section#cria {
 
 .obs {
     font-size: 0.9rem;
-    color: #777;
+    color: #777777;
     font-style: italic;
     margin-bottom: 15px;
     padding-bottom: 10px;
@@ -156,7 +156,7 @@ section#cria {
 }
 
 .projeto{
-    background-color: white;
+    background-color: var(--fundo);
     border-radius: 15px;
     padding: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.247);
@@ -174,8 +174,8 @@ section#cria {
 }
 
 .btn-projeto{
-    background-color: #10b89a;
-    color: white;
+    background-color: var(--hedfoot);
+    color: var(--fundo);
     border: none;
     padding: 10px 15px;
     border-radius: 8px;
