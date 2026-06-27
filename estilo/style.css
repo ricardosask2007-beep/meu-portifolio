@@ -5,7 +5,7 @@
 }
 
 :root {
-    --hedfoot: #00B28F;
+    --hedfoot: #1D4ED8;
     --fundo: #ffff;
     --cont: #00A124;
     --let: #000000;
@@ -25,6 +25,41 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
+}
+
+
+.acoes{
+
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+    justify-content:center;
+    flex-wrap:wrap;
+
+}
+
+.acoes a{
+
+    background:var(--hedfoot);
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.acoes a:hover{
+
+    transform:translateY(-5px);
+
 }
 
 #menu ul {
@@ -58,7 +93,7 @@ main {
     width: 250px;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 5px 1px var(--hedfoot);
+    border:5px solid var(--hedfoot);
     padding: 10px;
     display: block;
     margin: auto;
@@ -66,8 +101,46 @@ main {
 }
 
 #perfil h1 {
+    font-size: 2.3rem;
     text-align: left;
     padding: 10px 0px 8px 0px;
+}
+
+#servicos{
+
+    grid-column:2;
+
+}
+
+#servicos h2{
+    padding-bottom: 30px;
+}
+
+.cards-servicos{
+
+    display:grid;
+    gap:20px;
+}
+
+.cards-servicos article{
+
+    padding:20px;
+
+    border-left:4px solid var(--hedfoot);
+
+    border-radius:12px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.cards-servicos article:hover{
+
+    transform:translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, .18);
+
 }
 
 #comp {
@@ -168,7 +241,8 @@ section#cria {
     border-radius: 10px;
 }
 
-.projeto h3, p{
+.projeto h3,
+.projeto p{
     margin: 10px 0;
     text-align: center;
 }
@@ -214,7 +288,6 @@ section#cria {
 
 
 
-
 footer {
     background-color: var(--hedfoot);
     color: var(--fundo);
@@ -245,7 +318,13 @@ footer a.orc {
 
 @media  screen and (min-width: 768px) {
     main {
-        grid-template-columns: auto 400px 1fr auto;
+        grid-template-columns: auto 470px 1fr auto;
+    }
+
+    section{
+
+        margin-bottom:30px;
+
     }
 
     #perfil {
@@ -253,10 +332,61 @@ footer a.orc {
         height: fit-content;
         position: sticky;
         top: 65px;
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    #perfil img{
+
+        width:320px;
+        height:320px;
+
+    }
+
+    #perfil h1{
+
+        font-size:3.0rem;
+        line-height: 1.1;
+    }
+
+    #perfil p{
+
+        font-size:1.08rem;
+        line-height:1.7;
+        text-align:left;
+
+    }
+
+    .acoes{
+
+        margin-top:15px;
+        display:flex;
+        gap:15px;
+
+    }
+
+    .acoes a{
+
+        padding:15px 30px;
+
+        font-size:1.1rem;
+
+    }
+
+    #servicos{
+
+        grid-column:3/4;
+    }
+
+    .cards-servicos{
+
+        grid-template-columns:repeat(2,1fr);
+        
     }
 
     #comp {
         grid-column: 3/4;
+        margin-top: 0;
     }
     
     section#cria {
