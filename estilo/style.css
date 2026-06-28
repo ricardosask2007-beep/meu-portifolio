@@ -181,22 +181,27 @@ main {
 .cards-servicos article{
 
     padding:20px;
-
     border-left:4px solid var(--hedfoot);
-
     border-radius:12px;
-
     box-shadow:0 4px 12px rgba(0,0,0,.08);
-
     transition:.3s;
-
+    cursor: pointer;
 }
 
 .cards-servicos article:hover{
 
     transform:translateY(-8px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, .18);
+    border-color: var(--hedfoot);
+    outline: 1.5px solid var(--hedfoot);
 
+}
+
+.cards-servicos article i {
+    font-size: 2rem;
+    color: var(--hedfoot);
+    margin-bottom: 10px;
+    display: block;
 }
 
 .preco {
@@ -345,12 +350,6 @@ section#cria {
 
 
 
-
-
-
-
-
-
 footer {
     background-color: var(--hedfoot);
     color: var(--fundo);
@@ -377,6 +376,30 @@ footer a.orc {
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+/* WHATSAPP FLUTUANTE */
+.wpp-float {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: #25D366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(37,211,102,0.4);
+    transition: transform 0.3s;
+    z-index: 99;
+}
+
+.wpp-float:hover {
+    transform: scale(1.1);
 }
 
 @media  screen and (min-width: 768px) {
