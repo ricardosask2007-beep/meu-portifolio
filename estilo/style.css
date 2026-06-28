@@ -13,6 +13,30 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #f8fafc, #eef4ff);
+}
+
+/* 1. BARRA DE PROGRESSO */
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: linear-gradient(90deg, var(--hedfoot), #60A5FA);
+    z-index: 999;
+    transition: width 0.1s;
+}
+
+/* 2. REVEAL */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visivel {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 header {
@@ -102,6 +126,17 @@ main {
     margin: 10px 5px;
 }
 
+/* 9. LINHA NAS SEÇÕES */
+section h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: var(--hedfoot);
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
 #perfil {
     border-radius: 10px;
     padding: 20px;
@@ -118,6 +153,11 @@ main {
     display: block;
     margin: auto;
     margin-bottom: 10px;
+    transition: .4s;
+}
+
+#perfil img:hover {
+    transform: scale(1.03);
 }
 
 #perfil h1 {
@@ -265,7 +305,8 @@ main {
 }
 
 .card:hover{
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(37, 99, 235, .2);
 }
 
 .ativo {
@@ -304,9 +345,13 @@ section#cria {
     margin-bottom: 20px;
 }
 
-.projeto img{
+.projeto img {
     width: 100%;
     border-radius: 10px;
+    transition: .4s;
+}
+.projeto:hover img {
+    transform: scale(1.01);
 }
 
 .projeto h3,
@@ -325,17 +370,20 @@ section#cria {
     font-weight: bold;
 }
 
-.info-projeto{
-    display: none;
-    margin-top: 15px;
+.btn-projeto:hover {
+    transform: scale(1.05);
 }
 
-.info-projeto.ativo{
-    display: block;
-    background-color: var(--hedfoot);
-    color: black;
-    padding: 1px;
-    border-radius: 10px;
+/* 10. INFO PROJETO DESLIZANDO */
+.info-projeto {
+    border-radius: 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    display: block !important;
+}
+.info-projeto.ativo {
+    max-height: 250px;
 }
 
 .info-projeto a {
@@ -353,7 +401,7 @@ section#cria {
 footer {
     background-color: var(--hedfoot);
     color: var(--fundo);
-    padding: 10px;
+    padding: 50px 10px;
     text-align: center;
 }
 
