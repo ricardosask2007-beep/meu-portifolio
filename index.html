@@ -6,7 +6,13 @@
     <title>Portifólio Ricardo Carvalho</title>
     <link rel="stylesheet" href="estilo/style.css">
     <script src="https://kit.fontawesome.com/7b1ca2f7dd.js" crossorigin="anonymous"></script>
-</head>
+    <!-- Font Awesome com defer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
+
+    <!-- Google Fonts com preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    </head>
 <body>
     <div id="progress-bar"></div>
     <header>
@@ -28,7 +34,7 @@
     <main>
         <section id="perfil">
             <div>
-                <img src="imagem/WhatsApp Image 2026-05-13 at 14.07.01.jpeg" alt="eu">
+                <img src="imagem/WhatsApp Image 2026-05-13 at 14.07.01.jpeg" alt="eu" loading="eager" fetchpriority="high">
                 <h1>Ricardo Da Luz Carvalho</h1>
                 <p>Olá! Sou Ricardo Carvalho, desenvolvedor em formação apaixonado por tecnologia e desenvolvimento de software.
 
@@ -153,7 +159,7 @@
             * Competências relacionadas ao desenvolvimento Front-end utilizando HTML, CSS e JavaScript.
             </p>
             <article class="projeto">
-                <img src="imagem/projeto-02-cordel.jpg" alt="Projeto Cordel">
+                <img src="imagem/projeto-02-cordel.jpg" alt="Projeto Cordel" loading="lazy">
 
                 <h3>Projeto Cordel</h3>
 
@@ -176,7 +182,7 @@
             </article>
 
             <article class="projeto">
-                <img src="imagem/Captura de tela 2026-05-22 163627.webp" alt="Projeto Cadastro">
+                <img src="imagem/Captura de tela 2026-05-22 163627.webp" alt="Projeto Cadastro" loading="lazy">
 
                 <h3>Projeto Cadastro</h3>
 
@@ -198,7 +204,7 @@
             </article>
 
             <article class="projeto">
-                <img src="imagem/projeto-03-android.jpg" alt="Projeto Cordel">
+                <img src="imagem/projeto-03-android.jpg" alt="Projeto Cordel" loading="lazy">
 
                 <h3>Projeto Android</h3>
 
@@ -220,8 +226,8 @@
                 </div>
             </article>
 
-                        <article class="projeto">
-                <img src="imagem/projeto-05-login.jpg" alt="Projeto Cordel">
+                <article class="projeto">
+                <img src="imagem/projeto-05-login.jpg" alt="Projeto Cordel" loading="lazy">
 
                 <h3>Projeto login</h3>
 
