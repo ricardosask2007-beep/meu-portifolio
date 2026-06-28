@@ -16,6 +16,11 @@
     --let: #000000;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 65px;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(180deg, #f8fafc, #eef4ff);
