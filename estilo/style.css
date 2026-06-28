@@ -421,7 +421,7 @@ footer a.orc {
     }
 
     main {
-        grid-template-columns: auto 470px 1fr auto;
+        grid-template-columns: auto 490px 1fr auto;
     }
 
     section{
